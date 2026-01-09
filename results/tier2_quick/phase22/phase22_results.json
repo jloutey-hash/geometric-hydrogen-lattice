@@ -1,0 +1,42 @@
+{
+  "validation": {
+    "total_links": 16384,
+    "max_unitarity_error": 3.2420594920852997e-16,
+    "max_det_error": 4.443059973708341e-16,
+    "valid": true
+  },
+  "small_lattice": {
+    "shape": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "average_plaquette": 0.936189471008487,
+    "wilson_action": 1568.2075604953789
+  },
+  "scalar_field": {
+    "lattice_size": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "mass": 1.0,
+    "E_kin": 31905.838542860907,
+    "E_pot": 3957.04140126189,
+    "E_tot": 35862.8799441228,
+    "energy_positive": true,
+    "energy_real": true,
+    "mass_scaling": true
+  },
+  "medium_lattice": {
+    "shape": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "memory_MB": 16.777216
+  }
+}

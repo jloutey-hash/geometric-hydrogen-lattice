@@ -1,0 +1,6 @@
+{
+  "validation": {
+    "total_links": 16384,
+    "max_unitarity_error": 3.2368292874484694e-16,
+    "max_det_error": 4.449557262054371e-16,
+    "valid": 
