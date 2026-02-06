@@ -1,0 +1,653 @@
+# Directory Summary: Geometric Atom Research Repository
+
+**Last Updated:** February 06, 2026  
+**Status:** ✅ REORGANIZED & VERIFIED
+
+This directory contains a comprehensive research project deriving the fine structure constant (α⁻¹ ≈ 137.036) from pure geometry using SO(4,2) symmetry of the hydrogen atom.
+
+---
+
+## 📊 Repository Statistics
+
+- **Total Files:** 579 files
+  - **Root Directory:** 336 files
+  - **src/:** 38 files
+  - **paper/:** 6 files
+  - **logs/:** 98 files
+  - **figures/:** 43 files
+  - **archive/:** 48 files
+  - **tests_archive/:** 10 files
+- **Status:** ✅ Verification Complete (4/4 tests passing)
+- **Organization:** ✅ Repository restructured (Feb 6, 2026)
+
+---
+
+## 📁 ROOT DIRECTORY (336 files)
+
+### Python Scripts (89)
+- `analyze_phase9_results.py`
+- `debug_hamiltonian.py`
+- `debug_rungeLenz.py`
+- `debug_su11_algebra.py`
+- `debug_z_operator.py`
+- `demo.py`
+- `examples.py`
+- `examples_phase2.py`
+- `find_su3_canonical.py`
+- `generate_directory_summary.py`
+- `generate_figure1.py`
+- `generate_manuscript_figures.py`
+- `generate_paper_figures.py`
+- `generate_stark_map.py`
+- `geometric_impedance_interface.py`
+- `hydrogen_su3_correspondence.py`
+- `hydrogen_u1_impedance.py`
+- `organize_repo.py`
+- `paraboloid_examples.py`
+- `paraboloid_lattice_su11.py`
+- `paraboloid_relativistic.py`
+- `physics_alpha_deep_search.py`
+- `physics_alpha_derive.py`
+- `physics_alpha_hunt.py`
+- `physics_alpha_refinement.py`
+- `physics_audit.py`
+- `physics_dirac_alpha.py`
+- `physics_discovery.py`
+- `physics_holonomy.py`
+- `physics_kill_switch.py`
+- `physics_laplacian_fix.py`
+- `physics_lattice_statistics.py`
+- `physics_light_dimension.py`
+- `physics_scaling.py`
+- `physics_spectral_audit.py`
+- `physics_spectral_audit_v2.py`
+- `physics_validation.py`
+- `physics_verification.py`
+- `plot_canonical_highlight.py`
+- `plot_u1_su3_comparison.py`
+- `run_all_tests.py`
+- `run_all_validation_tests.py`
+- `run_beta_scan.py`
+- `run_bh_entropy_test.py`
+- `run_final_investigations.py`
+- `run_gauge_test.py`
+- `run_geometric_research_complete.py`
+- `run_hydrogen_test.py`
+- `run_lqg_test.py`
+- `run_phase1_geometric_diagnostic.py`
+- `run_phase28.py`
+- `run_phase29.py`
+- `run_phase2_geometric_transform_test.py`
+- `run_phase30.py`
+- `run_phase32.py`
+- `run_phase3_geometric_validation.py`
+- `run_phase4_geometric_optimization.py`
+- `run_remaining_phases.py`
+- `run_reproduction.py`
+- `run_rg_analytical.py`
+- `run_rg_quick.py`
+- `run_rg_test.py`
+- `run_spin_network_test.py`
+- `run_su3_packing_scan.py`
+- `run_su3_test.py`
+- `run_u1_analytical.py`
+- `run_u1_test.py`
+- `run_vacuum_test.py`
+- `scipy_convergence.py`
+- `show_canonical.py`
+- `su2_impedance_toy.py`
+- `su3_impedance_analysis.py`
+- `su3_impedance_wrapper.py`
+- `test_11_diagonality.py`
+- `test_algebra_closure.py`
+- `test_algebra_simple.py`
+- `test_casimir_quick.py`
+- `test_coverage_audit.py`
+- `test_discovery.py`
+- `test_hopf.py`
+- `test_paraboloid_quick.py`
+- `test_relativistic.py`
+- `test_scipy_quick.py`
+- `test_spherical_comm.py`
+- `test_su3_fix.py`
+- `unified_impedance_comparison.py`
+- `verify_claims.py`
+- `verify_commutator_symbolic.py`
+- `verify_geometric_research_setup.py`
+
+### Markdown Documentation (98)
+- `AI_INSTRUCTIONS.md`
+- `ALL_PHASES_COMPLETE.md`
+- `ALPHA_DERIVATION_MANUSCRIPT_SUMMARY.md`
+- `ALPHA_HUNT_FINAL_VERDICT.md`
+- `ALPHA_QUEST_FINAL_REPORT.md`
+- `CLEANUP_SUMMARY.md`
+- `CODE_ORGANIZATION_REPORT.md`
+- `COMPLETE_STATUS_REPORT.md`
+- `DIRAC_CORRECTION_ANALYSIS.md`
+- `DIRECTORY_SUMMARY.md`
+- `FIGURES_COMPLETE.md`
+- `FINAL_COMPREHENSIVE_SUMMARY.md`
+- `FINAL_REPORT.md`
+- `FINDINGS_SUMMARY.md`
+- `GAP_CLOSED.md`
+- `GEOMETRIC_CONSTANT_DISCOVERY.md`
+- `GEOMETRIC_MEAN_PROOF.md`
+- `GEOMETRIC_RESEARCH_FINDINGS.md`
+- `GEOMETRIC_RESEARCH_IMPLEMENTATION_SUMMARY.md`
+- `GEOMETRIC_RESEARCH_INDEX.md`
+- `GEOMETRIC_RESEARCH_QUICKSTART.md`
+- `GEOMETRIC_RESEARCH_README.md`
+- `GEOMETRIC_SUBSTITUTION_ANALYSIS.md`
+- `HELICITY_SOLUTION_COMPLETE.md`
+- `INTEGRATION_COMPLETE.md`
+- `MANUSCRIPT_FINALIZATION_SUMMARY.md`
+- `NEW_SECTION_SUMMARY.md`
+- `PACKAGE_INDEX.md`
+- `PAPER_DELIVERABLES_SUMMARY.md`
+- `PAPER_REVISION_SUMMARY.md`
+- `PAPERS_RECONCILIATION_SUMMARY.md`
+- `Paraboloid Manifesto.md`
+- `PARABOLOID_IMPLEMENTATION_SUMMARY.md`
+- `PARABOLOID_LATTICE_DOCUMENTATION.md`
+- `PEER_REVIEW_DEFENSE.md`
+- `PHASE10_11_COMPLETE.md`
+- `PHASE10_11_PLAN.md`
+- `PHASE12_14_SUMMARY.md`
+- `PHASE15_SUMMARY.md`
+- `PHASE19_SUMMARY.md`
+- `PHASE1_DSHT_COMPLETE.md`
+- `PHASE1_SUMMARY.md`
+- `PHASE20_SUMMARY.md`
+- `PHASE21_SUMMARY.md`
+- `PHASE28_37_PLAN.md`
+- `PHASE28_37_SUMMARY.md`
+- `PHASE2_IMPROVED_RADIAL_COMPLETE.md`
+- `PHASE2_SUMMARY.md`
+- `PHASE3_SUMMARY.md`
+- `PHASE3_WILSON_LOOPS_COMPLETE.md`
+- `PHASE5_S3_COMPLETE.md`
+- `PHASE8_CONVERGENCE_VERDICT.md`
+- `PHASE8_SUMMARY.md`
+- `PHASE9_COMPLETE.md`
+- `PHASE9_FIRST_RESULTS.md`
+- `PHASE9_PLAN.md`
+- `PHASE9_QUICKSTART.md`
+- `PHASE9_RESULTS.md`
+- `PHASE9_SUMMARY.md`
+- `PHOTON_ALPHA_SIGNATURES.md`
+- `PHYSICS_DISCOVERY_SUMMARY.md`
+- `POLAR_QUATERNION_REPORT.md`
+- `PROGRESS.md`
+- `PROJECT_COMPLETE.md`
+- `PROJECT_PLAN.md`
+- `PUBLICATION_GUIDE.md`
+- `README.md`
+- `README_old.md`
+- `README_PARABOLOID.md`
+- `RELATIVISTIC_EXTENSIONS_SUMMARY.md`
+- `RELATIVISTIC_QUICKSTART.md`
+- `RELATIVISTIC_V2_SUMMARY.md`
+- `REORGANIZATION_SUMMARY.md`
+- `RESEARCH_DIRECTIONS_PLAN.md`
+- `SO4_MACHINE_PRECISION_ACHIEVED.md`
+- `SU3_ANALYSIS_IMPLEMENTATION.md`
+- `SU3_CANONICAL_COMPLETE.md`
+- `SU3_CANONICAL_INTERPRETATION.md`
+- `SU3_CANONICAL_QUICKREF.md`
+- `SU3_CANONICAL_SUMMARY.md`
+- `SU3_FINAL_IMPLEMENTATION_REPORT.md`
+- `SU3_GEOMETRIC_INTEGRATION_STATUS.md`
+- `SU3_QUICK_REFERENCE.md`
+- `SU3_SCALING_ANALYSIS_SUMMARY.md`
+- `SU3_STRENGTHENING_QUICKSTART.md`
+- `SU3_STRENGTHENING_SUMMARY.md`
+- `SUBMISSION_READY.md`
+- `SYMPLECTIC_REVISION_COMPLETE.md`
+- `TECHNICAL_SUMMARY.md`
+- `TEST_VALIDATION_REPORT.md`
+- `TIER1_IMPLEMENTATION_COMPLETE.md`
+- `TIER2_IMPLEMENTATION.md`
+- `UNIFIED_IMPEDANCE_INDEX.md`
+- `unified_impedance_readme.md`
+- `UNIFIED_IMPEDANCE_SUMMARY.md`
+- `VERSION_3_QUICKSTART.md`
+- `VERSION_3_REVISION_SUMMARY.md`
+- `VERSION_4_REVISION_SUMMARY.md`
+
+### LaTeX Files (13)
+- `alpha_derivation_paper.tex`
+- `geometric_atom_final_prl.tex`
+- `geometric_atom_manifesto.tex`
+- `geometric_atom_manifesto_final.tex`
+- `geometric_atom_symplectic_revision.tex`
+- `geometric_atom_v2.tex`
+- `geometric_atom_v3.tex`
+- `geometric_atom_v4.tex`
+- `geometric_atom_v5.tex`
+- `geometric_atom_v6.tex`
+- `holographic_hydrogen_atom.tex`
+- `LATEX_FIGURE_REFERENCE.tex`
+- `qed_correspondence_section.tex`
+
+### PDF Files (18)
+- `alpha_derivation_paper.pdf`
+- `figure1_lattice_fibers.pdf`
+- `figure1_paraboloid.pdf`
+- `figure1_paraboloid_3d.pdf`
+- `figure2_convergence.pdf`
+- `figure2_transition_path.pdf`
+- `figure3_helix_schematic.pdf`
+- `figure3_sparsity.pdf`
+- `geometric_atom_final_prl.pdf`
+- `geometric_atom_manifesto.pdf`
+- `geometric_atom_manifesto_final.pdf`
+- `geometric_atom_symplectic_revision.pdf`
+- `geometric_atom_v2.pdf`
+- `geometric_atom_v3.pdf`
+- `geometric_atom_v4.pdf`
+- `geometric_atom_v5.pdf`
+- `geometric_atom_v6.pdf`
+- `holographic_hydrogen_atom.pdf`
+
+### PNG Images (26)
+- `alpha_convergence.png`
+- `continuum_test.png`
+- `figure1_lattice_fibers.png`
+- `figure1_paraboloid.png`
+- `figure1_paraboloid_3d.png`
+- `figure2_convergence.png`
+- `figure2_transition_path.png`
+- `figure3_helix_schematic.png`
+- `figure3_sparsity.png`
+- `holonomy_analysis.png`
+- `paraboloid_lattice_visualization.png`
+- `paraboloid_spectral_analysis.png`
+- `phase2_2d_eigenmodes.png`
+- `phase2_eigenvalue_spectra.png`
+- `phase2_ring_eigenmodes.png`
+- `phase6_convergence_m1.png`
+- `scaling_plot.png`
+- `stark_map.png`
+- `stark_map_visualization.png`
+- `stark_spectrum.png`
+- `su3_analysis_plots.png`
+- `su3_canonical_analysis.png`
+- `su3_canonical_highlight.png`
+- `u1_su3_comparison_plots.png`
+- `validation_2d_lattice.png`
+- `validation_3d_sphere.png`
+
+### Other Files (92)
+- `.gitignore`
+- `alpha_derivation_paper.aux`
+- `alpha_derivation_paper.log`
+- `alpha_derivation_paperNotes.bib`
+- `alpha_derivation_report.txt`
+- `alpha_refinement_report.txt`
+- `alpha_report.txt`
+- `audit_report.txt`
+- `canonical_output.log`
+- `compile_v4.ps1`
+- `deep_output.txt`
+- `dirac_correction_report.txt`
+- `discovery_output.txt`
+- `discovery_report.txt`
+- `full_convergence_output.txt`
+- `geometric_atom_final_prl.aux`
+- `geometric_atom_final_prl.log`
+- `geometric_atom_final_prlNotes.bib`
+- `geometric_atom_manifesto.aux`
+- `geometric_atom_manifesto.log`
+- `geometric_atom_manifesto.out`
+- `geometric_atom_manifesto_final.aux`
+- `geometric_atom_manifesto_final.log`
+- `geometric_atom_manifesto_finalNotes.bib`
+- `geometric_atom_manifestoNotes.bib`
+- `geometric_atom_submission.aux`
+- `geometric_atom_submission.log`
+- `geometric_atom_submissionNotes.bib`
+- `geometric_atom_symplectic_revision.aux`
+- `geometric_atom_symplectic_revision.log`
+- `geometric_atom_symplectic_revisionNotes.bib`
+- `geometric_atom_v2.aux`
+- `geometric_atom_v2.bbl`
+- `geometric_atom_v2.blg`
+- `geometric_atom_v2.log`
+- `geometric_atom_v2.out`
+- `geometric_atom_v2Notes.bib`
+- `geometric_atom_v3.aux`
+- `geometric_atom_v3.bbl`
+- `geometric_atom_v3.blg`
+- `geometric_atom_v3.log`
+- `geometric_atom_v3.out`
+- `geometric_atom_v3Notes.bib`
+- `geometric_atom_v4.aux`
+- `geometric_atom_v4.bbl`
+- `geometric_atom_v4.blg`
+- `geometric_atom_v4.log`
+- `geometric_atom_v4.out`
+- `geometric_atom_v4Notes.bib`
+- `geometric_atom_v5.aux`
+- `geometric_atom_v5.bbl`
+- `geometric_atom_v5.blg`
+- `geometric_atom_v5.log`
+- `geometric_atom_v5.out`
+- `geometric_atom_v5Notes.bib`
+- `geometric_atom_v6.aux`
+- `geometric_atom_v6.log`
+- `geometric_atom_v6.out`
+- `geometric_atom_v6Notes.bib`
+- `geometric_constants.txt`
+- `geometric_ratios_output.txt`
+- `holographic_hydrogen_atom.aux`
+- `holographic_hydrogen_atom.log`
+- `holographic_hydrogen_atomNotes.bib`
+- `holonomy_report.txt`
+- `kill_switch_report.txt`
+- `laplacian_report.txt`
+- `lattice_stats_report.txt`
+- `light_coupling_report.txt`
+- `phase27_output.txt`
+- `REBUTTAL_SYMPLECTIC_DEFENSE.txt`
+- `requirements.txt`
+- `RUN_WEEK3.bat`
+- `run_week3_test.bat`
+- `scaling_report.txt`
+- `scan_output.log`
+- `spectral_audit_report.txt`
+- `spectral_audit_v2_report.txt`
+- `su3_canonical_candidates.csv`
+- `su3_canonical_derived.csv`
+- `su3_impedance_derived.csv`
+- `su3_impedance_packing_scan.csv`
+- `su3_impedance_packing_scan_extended.csv`
+- `temp_archive_files.txt`
+- `temp_figures_files.txt`
+- `temp_logs_files.txt`
+- `temp_paper_files.txt`
+- `temp_root_files.txt`
+- `temp_src_files.txt`
+- `temp_tests_files.txt`
+- `verification_report.txt`
+- `week3_output.txt`
+
+
+---
+
+## 📁 SRC DIRECTORY (38 files)
+
+### Python Modules (38)
+- `src\__init__.py`
+- `src\angular_momentum.py`
+- `src\berry_phase.py`
+- `src\black_hole_entropy.py`
+- `src\compute_alpha.py`
+- `src\compute_statistics.py`
+- `src\convergence.py`
+- `src\electroweak.py`
+- `src\fine_structure.py`
+- `src\fine_structure_deep.py`
+- `src\gauge_theory.py`
+- `src\generate_figures.py`
+- `src\geometric_ratios.py`
+- `src\geometric_transform_research.py`
+- `src\gut_honest_analysis.py`
+- `src\hydrogen_lattice.py`
+- `src\improved_radial.py`
+- `src\lattice.py`
+- `src\lqg_operators.py`
+- `src\model_alpha.py`
+- `src\model_interface.py`
+- `src\model_lattice.py`
+- `src\model_spectral_audit.py`
+- `src\model_su3.py`
+- `src\operators.py`
+- `src\quantum_comparison.py`
+- `src\quantum_crossover_corrected.py`
+- `src\rg_flow.py`
+- `src\s3_manifold.py`
+- `src\spherical_harmonics_transform.py`
+- `src\spin.py`
+- `src\spin_networks.py`
+- `src\su3_gauge_theory.py`
+- `src\u1_gauge_theory.py`
+- `src\vacuum_energy.py`
+- `src\validation_independent.py`
+- `src\visualization.py`
+- `src\wilson_loops.py`
+
+
+---
+
+## 📁 PAPER DIRECTORY (6 files)
+
+- `paper\paper_1_spectrum.pdf`
+- `paper\paper_1_spectrum.tex`
+- `paper\paper_2_alpha.pdf`
+- `paper\paper_2_alpha.tex`
+- `paper\paper_3_holography.pdf`
+- `paper\paper_3_holography.tex`
+
+
+---
+
+## 📁 LOGS DIRECTORY (98 files)
+
+- `logs\AI_INSTRUCTIONS.md`
+- `logs\ALL_PHASES_COMPLETE.md`
+- `logs\ALPHA_DERIVATION_MANUSCRIPT_SUMMARY.md`
+- `logs\ALPHA_HUNT_FINAL_VERDICT.md`
+- `logs\ALPHA_QUEST_FINAL_REPORT.md`
+- `logs\CLEANUP_SUMMARY.md`
+- `logs\CODE_ORGANIZATION_REPORT.md`
+- `logs\COMPLETE_STATUS_REPORT.md`
+- `logs\DIRAC_CORRECTION_ANALYSIS.md`
+- `logs\DIRECTORY_SUMMARY.md`
+- `logs\FIGURES_COMPLETE.md`
+- `logs\FINAL_COMPREHENSIVE_SUMMARY.md`
+- `logs\FINAL_REPORT.md`
+- `logs\FINDINGS_SUMMARY.md`
+- `logs\GAP_CLOSED.md`
+- `logs\GEOMETRIC_CONSTANT_DISCOVERY.md`
+- `logs\GEOMETRIC_MEAN_PROOF.md`
+- `logs\GEOMETRIC_RESEARCH_FINDINGS.md`
+- `logs\GEOMETRIC_RESEARCH_IMPLEMENTATION_SUMMARY.md`
+- `logs\GEOMETRIC_RESEARCH_INDEX.md`
+- `logs\GEOMETRIC_RESEARCH_QUICKSTART.md`
+- `logs\GEOMETRIC_RESEARCH_README.md`
+- `logs\GEOMETRIC_SUBSTITUTION_ANALYSIS.md`
+- `logs\HELICITY_SOLUTION_COMPLETE.md`
+- `logs\INTEGRATION_COMPLETE.md`
+- `logs\MANUSCRIPT_FINALIZATION_SUMMARY.md`
+- `logs\NEW_SECTION_SUMMARY.md`
+- `logs\PACKAGE_INDEX.md`
+- `logs\PAPER_DELIVERABLES_SUMMARY.md`
+- `logs\PAPER_REVISION_SUMMARY.md`
+- `logs\PAPERS_RECONCILIATION_SUMMARY.md`
+- `logs\Paraboloid Manifesto.md`
+- `logs\PARABOLOID_IMPLEMENTATION_SUMMARY.md`
+- `logs\PARABOLOID_LATTICE_DOCUMENTATION.md`
+- `logs\PEER_REVIEW_DEFENSE.md`
+- `logs\PHASE10_11_COMPLETE.md`
+- `logs\PHASE10_11_PLAN.md`
+- `logs\PHASE12_14_SUMMARY.md`
+- `logs\PHASE15_SUMMARY.md`
+- `logs\PHASE19_SUMMARY.md`
+- `logs\PHASE1_DSHT_COMPLETE.md`
+- `logs\PHASE1_SUMMARY.md`
+- `logs\PHASE20_SUMMARY.md`
+- `logs\PHASE21_SUMMARY.md`
+- `logs\PHASE28_37_PLAN.md`
+- `logs\PHASE28_37_SUMMARY.md`
+- `logs\PHASE2_IMPROVED_RADIAL_COMPLETE.md`
+- `logs\PHASE2_SUMMARY.md`
+- `logs\PHASE3_SUMMARY.md`
+- `logs\PHASE3_WILSON_LOOPS_COMPLETE.md`
+- `logs\PHASE5_S3_COMPLETE.md`
+- `logs\PHASE8_CONVERGENCE_VERDICT.md`
+- `logs\PHASE8_SUMMARY.md`
+- `logs\PHASE9_COMPLETE.md`
+- `logs\PHASE9_FIRST_RESULTS.md`
+- `logs\PHASE9_PLAN.md`
+- `logs\PHASE9_QUICKSTART.md`
+- `logs\PHASE9_RESULTS.md`
+- `logs\PHASE9_SUMMARY.md`
+- `logs\PHOTON_ALPHA_SIGNATURES.md`
+- `logs\PHYSICS_DISCOVERY_SUMMARY.md`
+- `logs\POLAR_QUATERNION_REPORT.md`
+- `logs\PROGRESS.md`
+- `logs\PROJECT_COMPLETE.md`
+- `logs\PROJECT_PLAN.md`
+- `logs\PUBLICATION_GUIDE.md`
+- `logs\README.md`
+- `logs\README_old.md`
+- `logs\README_PARABOLOID.md`
+- `logs\RELATIVISTIC_EXTENSIONS_SUMMARY.md`
+- `logs\RELATIVISTIC_QUICKSTART.md`
+- `logs\RELATIVISTIC_V2_SUMMARY.md`
+- `logs\REORGANIZATION_SUMMARY.md`
+- `logs\RESEARCH_DIRECTIONS_PLAN.md`
+- `logs\SO4_MACHINE_PRECISION_ACHIEVED.md`
+- `logs\SU3_ANALYSIS_IMPLEMENTATION.md`
+- `logs\SU3_CANONICAL_COMPLETE.md`
+- `logs\SU3_CANONICAL_INTERPRETATION.md`
+- `logs\SU3_CANONICAL_QUICKREF.md`
+- `logs\SU3_CANONICAL_SUMMARY.md`
+- `logs\SU3_FINAL_IMPLEMENTATION_REPORT.md`
+- `logs\SU3_GEOMETRIC_INTEGRATION_STATUS.md`
+- `logs\SU3_QUICK_REFERENCE.md`
+- `logs\SU3_SCALING_ANALYSIS_SUMMARY.md`
+- `logs\SU3_STRENGTHENING_QUICKSTART.md`
+- `logs\SU3_STRENGTHENING_SUMMARY.md`
+- `logs\SUBMISSION_READY.md`
+- `logs\SYMPLECTIC_REVISION_COMPLETE.md`
+- `logs\TECHNICAL_SUMMARY.md`
+- `logs\TEST_VALIDATION_REPORT.md`
+- `logs\TIER1_IMPLEMENTATION_COMPLETE.md`
+- `logs\TIER2_IMPLEMENTATION.md`
+- `logs\UNIFIED_IMPEDANCE_INDEX.md`
+- `logs\unified_impedance_readme.md`
+- `logs\UNIFIED_IMPEDANCE_SUMMARY.md`
+- `logs\VERSION_3_QUICKSTART.md`
+- `logs\VERSION_3_REVISION_SUMMARY.md`
+- `logs\VERSION_4_REVISION_SUMMARY.md`
+
+
+---
+
+## 📁 FIGURES DIRECTORY (43 files)
+
+- `figures\alpha_convergence.png`
+- `figures\alpha_derivation_paper.pdf`
+- `figures\continuum_test.png`
+- `figures\figure1_lattice_fibers.pdf`
+- `figures\figure1_lattice_fibers.png`
+- `figures\figure1_paraboloid.pdf`
+- `figures\figure1_paraboloid.png`
+- `figures\figure1_paraboloid_3d.pdf`
+- `figures\figure1_paraboloid_3d.png`
+- `figures\figure2_convergence.pdf`
+- `figures\figure2_convergence.png`
+- `figures\figure2_transition_path.pdf`
+- `figures\figure2_transition_path.png`
+- `figures\figure3_helix_schematic.pdf`
+- `figures\figure3_helix_schematic.png`
+- `figures\figure3_sparsity.pdf`
+- `figures\figure3_sparsity.png`
+- `figures\geometric_atom_final_prl.pdf`
+- `figures\geometric_atom_manifesto.pdf`
+- `figures\geometric_atom_manifesto_final.pdf`
+- `figures\geometric_atom_submission.pdf`
+- `figures\geometric_atom_v2.pdf`
+- `figures\geometric_atom_v3.pdf`
+- `figures\geometric_atom_v4.pdf`
+- `figures\geometric_atom_v5.pdf`
+- `figures\geometric_atom_v6.pdf`
+- `figures\holonomy_analysis.png`
+- `figures\paraboloid_lattice_visualization.png`
+- `figures\paraboloid_spectral_analysis.png`
+- `figures\phase2_2d_eigenmodes.png`
+- `figures\phase2_eigenvalue_spectra.png`
+- `figures\phase2_ring_eigenmodes.png`
+- `figures\phase6_convergence_m1.png`
+- `figures\scaling_plot.png`
+- `figures\stark_map.png`
+- `figures\stark_map_visualization.png`
+- `figures\stark_spectrum.png`
+- `figures\su3_analysis_plots.png`
+- `figures\su3_canonical_analysis.png`
+- `figures\su3_canonical_highlight.png`
+- `figures\u1_su3_comparison_plots.png`
+- `figures\validation_2d_lattice.png`
+- `figures\validation_3d_sphere.png`
+
+
+---
+
+## 📁 ARCHIVE DIRECTORY (48 files)
+
+- `archive\debug_hamiltonian.py`
+- `archive\debug_rungeLenz.py`
+- `archive\debug_su11_algebra.py`
+- `archive\debug_z_operator.py`
+- `archive\demo.py`
+- `archive\run_all_tests.py`
+- `archive\run_all_validation_tests.py`
+- `archive\run_beta_scan.py`
+- `archive\run_bh_entropy_test.py`
+- `archive\run_final_investigations.py`
+- `archive\run_gauge_test.py`
+- `archive\run_geometric_research_complete.py`
+- `archive\run_hydrogen_test.py`
+- `archive\run_lqg_test.py`
+- `archive\run_phase1_geometric_diagnostic.py`
+- `archive\run_phase28.py`
+- `archive\run_phase29.py`
+- `archive\run_phase2_geometric_transform_test.py`
+- `archive\run_phase30.py`
+- `archive\run_phase32.py`
+- `archive\run_phase3_geometric_validation.py`
+- `archive\run_phase4_geometric_optimization.py`
+- `archive\run_remaining_phases.py`
+- `archive\run_reproduction.py`
+- `archive\run_rg_analytical.py`
+- `archive\run_rg_quick.py`
+- `archive\run_rg_test.py`
+- `archive\run_spin_network_test.py`
+- `archive\run_su3_packing_scan.py`
+- `archive\run_su3_test.py`
+- `archive\run_u1_analytical.py`
+- `archive\run_u1_test.py`
+- `archive\run_vacuum_test.py`
+- `archive\test_11_diagonality.py`
+- `archive\test_algebra_closure.py`
+- `archive\test_algebra_simple.py`
+- `archive\test_casimir_quick.py`
+- `archive\test_coverage_audit.py`
+- `archive\test_discovery.py`
+- `archive\test_hopf.py`
+- `archive\test_paraboloid_quick.py`
+- `archive\test_relativistic.py`
+- `archive\test_scipy_quick.py`
+- `archive\test_spherical_comm.py`
+- `archive\test_su3_fix.py`
+- `archive\verify_claims.py`
+- `archive\verify_commutator_symbolic.py`
+- `archive\verify_geometric_research_setup.py`
+
+
+---
+
+## 📁 TESTS_ARCHIVE DIRECTORY (10 files)
+
+- `tests_archive\run_bh_entropy_test.py`
+- `tests_archive\run_gauge_test.py`
+- `tests_archive\run_hydrogen_test.py`
+- `tests_archive\run_lqg_test.py`
+- `tests_archive\run_phase2_geometric_transform_test.py`
+- `tests_archive\run_rg_test.py`
+- `tests_archive\run_spin_network_test.py`
+- `tests_archive\run_su3_test.py`
+- `tests_archive\run_u1_test.py`
+- `tests_archive\run_vacuum_test.py`

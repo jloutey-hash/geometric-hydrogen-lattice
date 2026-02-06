@@ -1,0 +1,189 @@
+% ==============================================================================
+% QUICK REFERENCE: Figure Inclusion for geometric_atom_v2.tex
+% ==============================================================================
+%
+% This file shows how to insert the generated figures into your LaTeX paper.
+% Simply copy-paste the relevant sections below into your .tex file.
+%
+% ==============================================================================
+
+% ------------------------------------------------------------------------------
+% FIGURE 1: 3D Paraboloid Architecture (Single Column)
+% ------------------------------------------------------------------------------
+% Insert at the end of Section 2 or beginning of Section 3
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\linewidth]{figure1_paraboloid_3d.pdf}
+\caption{The discrete paraboloid lattice for $n_{\text{max}}=5$ (55 quantum 
+states). Nodes represent states $\ket{n,l,m}$ colored by principal quantum 
+number $n$ (viridis colormap). Grey lines denote angular momentum connections 
+($L_\pm$) forming concentric rings at fixed energy. Red lines show radial 
+transitions ($T_\pm$) connecting adjacent shells. The paraboloid geometry 
+simultaneously encodes spatial extent ($r = n^2$) and binding energy 
+($z = -1/n^2$), making quantum state space geometrically visible.}
+\label{fig:paraboloid3d}
+\end{figure}
+
+% Reference in text:
+% "Figure~\ref{fig:paraboloid3d} shows the 3D structure..."
+
+
+% ------------------------------------------------------------------------------
+% FIGURE 2: Transition Pathways (Two Column / Full Width)
+% ------------------------------------------------------------------------------
+% Insert in Section 4 or 5 for impact
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figure2_transition_path.pdf}
+\caption{Visualization of quantum transitions on the paraboloid lattice. 
+\textbf{Left panel:} Side view (radial distance vs.\ energy coordinate) 
+showing a Balmer series transition $\ket{3,1,0} \to \ket{2,1,0}$. The red 
+arrow illustrates photon emission as geometric descent in the energy well. 
+\textbf{Right panel:} Top view (x-y projection) revealing the $SO(4)$ angular 
+structure. States on the $n=2$ shell (red circle) serve as final states for 
+visible spectral lines. Grey lines show the dense web of angular connections 
+preserving $n$.}
+\label{fig:transitions}
+\end{figure*}
+
+% Reference in text:
+% "As shown in Fig.~\ref{fig:transitions}, quantum transitions..."
+% "The left panel of Fig.~\ref{fig:transitions} demonstrates..."
+
+
+% ------------------------------------------------------------------------------
+% FIGURE 3: Sparsity Structure (Two Column / Full Width)
+% ------------------------------------------------------------------------------
+% Insert in Section 4 (Computational Verification)
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figure3_sparsity.pdf}
+\caption{Sparse matrix structure of key operators for $n_{\text{max}}=7$ 
+(140 states, $140 \times 140$ matrices). Non-zero elements appear as colored 
+pixels. \textbf{Top left:} Radial raising operator $T_+$ (red) with 70 
+non-zero elements (0.36\% density). \textbf{Top right:} Angular raising 
+operator $L_+$ (blue) with 84 elements (0.43\%). \textbf{Bottom left:} 
+Angular momentum Casimir $L^2$ (green) showing block-diagonal structure by 
+$l$. \textbf{Bottom right:} Approximate Hamiltonian $H \approx T_3 + 0.1 L^2$ 
+(purple) demonstrating combined sparsity. Despite the complex 3D geometry, 
+operators remain $\sim 1\%$ dense, enabling $O(n)$ computational scaling. 
+The inset shows total memory compression exceeds 99\%.}
+\label{fig:sparsity}
+\end{figure*}
+
+% Reference in text:
+% "Figure~\ref{fig:sparsity} demonstrates the sparse structure..."
+% "The spy plots in Fig.~\ref{fig:sparsity} reveal..."
+
+
+% ==============================================================================
+% OPTIONAL: All Three Figures in Appendix (For Long Papers)
+% ==============================================================================
+
+\appendix
+\section{Lattice Visualization}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\linewidth]{figure1_paraboloid_3d.pdf}
+\caption{3D paraboloid lattice structure. See main text for details.}
+\label{fig:paraboloid3d_appendix}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\linewidth]{figure2_transition_path.pdf}
+\caption{Transition pathways. See main text for details.}
+\label{fig:transitions_appendix}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\linewidth]{figure3_sparsity.pdf}
+\caption{Operator sparsity structure. See main text for details.}
+\label{fig:sparsity_appendix}
+\end{figure}
+
+
+% ==============================================================================
+% TIPS AND TRICKS
+% ==============================================================================
+
+% TIP 1: Adjusting Figure Placement
+% Replace [htbp] with:
+%   [h]  - Try to place here
+%   [t]  - Top of page
+%   [b]  - Bottom of page
+%   [p]  - Page of floats only
+%   [H]  - Force exactly here (requires \usepackage{float})
+
+% TIP 2: Side-by-Side Figures (Alternative to figure*)
+\begin{figure}[htbp]
+\centering
+\begin{minipage}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figure1_paraboloid_3d.pdf}
+    \caption{Part A}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figure2_transition_path.pdf}
+    \caption{Part B}
+\end{minipage}
+\end{figure}
+
+% TIP 3: Subfigures (Requires \usepackage{subcaption})
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figure1_paraboloid_3d.pdf}
+    \caption{3D view}
+    \label{fig:sub1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figure2_transition_path.pdf}
+    \caption{2D projection}
+    \label{fig:sub2}
+\end{subfigure}
+\caption{Combined figure with subfigures.}
+\label{fig:combined}
+\end{figure}
+% Reference: Fig.~\ref{fig:combined}\subref{fig:sub1}
+
+% TIP 4: Wrapping Text Around Figure (Requires \usepackage{wrapfig})
+\begin{wrapfigure}{r}{0.5\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{figure1_paraboloid_3d.pdf}
+    \caption{Wrapped figure}
+    \label{fig:wrapped}
+\end{wrapfigure}
+
+% TIP 5: Rotating Figure (Requires \usepackage{rotating})
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figure3_sparsity.pdf}
+    \caption{Landscape figure}
+    \label{fig:landscape}
+\end{sidewaysfigure}
+
+% TIP 6: High-Resolution for Print
+% The generated PDFs are already vector graphics (infinite resolution)
+% If journal requires TIFF/EPS:
+%   - Convert using: convert -density 600 figure1.pdf figure1.tiff
+%   - Or use: pdftops -eps figure1.pdf figure1.eps
+
+% TIP 7: Colorblind-Friendly Check
+% The viridis colormap used in figures is colorblind-safe
+% Test at: https://www.color-blindness.com/coblis-color-blindness-simulator/
+
+% TIP 8: Figure Size Guidelines by Journal
+% Physical Review: \columnwidth or \textwidth
+% Nature/Science: Usually 89mm (single) or 183mm (double) width
+% Elsevier: 90mm (single) or 190mm (double) width
+
+% ==============================================================================
+% END OF QUICK REFERENCE
+% ==============================================================================
