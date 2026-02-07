@@ -338,6 +338,16 @@ If you use this code in your research, please cite:
 ```
 
 ---
+## Methodology
+🤖 AI-Assisted Research This project is an experiment in AI-Augmented Theoretical Physics.
+
+    The Intuition: Human (Packing points on a sphere).
+
+    The Implementation: AI (Python scripting, spectral analysis, error checking).
+
+    The Verification: Human (Reviewing the logic, validating the spectral audit).
+
+All code in this repository was generated via prompt engineering to test specific topological hypotheses. We invite the community to audit the code for artifacts, though the central result (Alpha ≈ 137.036) appears robust across multiple implementations.
 
 ## Contributing
 
